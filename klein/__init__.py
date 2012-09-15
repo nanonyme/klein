@@ -1,3 +1,3 @@
-from klein.app import Klein, run, route, resource
+from klein.app import app, resource
 
-__all__ = ['Klein', 'run', 'route', 'resource']
+__all__ = ['app', 'resource']

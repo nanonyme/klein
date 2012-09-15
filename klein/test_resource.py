@@ -1,6 +1,6 @@
 from twisted.trial import unittest
 
-from klein import Klein
+from flask import Flask
 from klein.resource import KleinResource
 
 from twisted.internet.defer import succeed, Deferred
@@ -99,7 +99,7 @@ class ChildrenResource(Resource):
 
 class KleinResourceTests(unittest.TestCase):
     def setUp(self):
-        self.app = Klein()
+        self.app = Flask("Klein-Flask hybrid")
         self.kr = KleinResource(self.app)
 
 

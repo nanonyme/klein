@@ -54,7 +54,7 @@ class KleinResource(Resource):
             request.setResponseCode(he.code)
             return he.get_body({})
 
-        handler = self._app.endpoints[endpoint]
+        handler = self._app.view_functions[endpoint]
 
         # Standard Twisted Web stuff. Defer the method action, giving us
         # something renderable or printable. Return NOT_DONE_YET and set up

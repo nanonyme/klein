@@ -5,5 +5,5 @@ setup(
     version="0.1.0",
     description="werkzeug + twisted.web",
     packages=["klein"],
-    install_requires=["Twisted", "werkzeug", "mock"]
+    install_requires=["Twisted", "werkzeug", "mock", "Flask"]
 )
