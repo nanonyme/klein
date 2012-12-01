@@ -152,7 +152,7 @@ class KleinResourceTests(unittest.TestCase):
         return d
 
     test_branchWithExplicitChildrenRouting.skip = ("Klein-Flask hybrid uses Flask URL mapping which doesn't"
-                                                   " support not-explicitly-defined children elements")
+                                                   "support this functionality")
 
     def test_deferredRendering(self):
         app = self.app
